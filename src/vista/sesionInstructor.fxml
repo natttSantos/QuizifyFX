@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="986.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controlador.SesionInstructorController">
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.SesionInstructorController">
    <children>
       <MenuBar layoutY="-1.0" prefHeight="40.0" prefWidth="986.0">
         <menus>
@@ -40,30 +39,37 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="225.0" layoutY="265.0" mnemonicParsing="false">
+      <Button layoutX="446.0" layoutY="265.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="95.0" styleClass="fondoBlanco" stylesheets="@../css/hojaEstilo.css" text="0" textFill="WHITE">
          <graphic>
-            <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
-         </graphic>
-      </Button>
-      <Button layoutX="446.0" layoutY="265.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="95.0" textFill="WHITE">
-         <graphic>
-            <ImageView fitHeight="61.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="57.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/quizAleatorio.png" />
+                  <Image url="@../images/random.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="674.0" layoutY="265.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="95.0">
+      <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="877.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/userTeacher.png" />
+         </image></ImageView>
+      <Label fx:id="instructor" layoutX="877.0" layoutY="127.0" text="instructor" />
+      <Button layoutX="225.0" layoutY="265.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="95.0" styleClass="fondoBlanco" stylesheets="@../css/hojaEstilo.css" textFill="WHITE">
          <graphic>
-            <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="70.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/pregunta.png" />
+                  <Image url="@../images/quiz.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
-      <ImageView fitHeight="40.0" fitWidth="52.0" layoutX="877.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="871.0" layoutY="117.0" text="instructor" />
+      <Button layoutX="674.0" layoutY="265.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="95.0" styleClass="fondoBlanco" stylesheets="@../css/hojaEstilo.css" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/question.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

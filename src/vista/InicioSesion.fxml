@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="595.0" styleClass="juego" stylesheets="@../css/hojaEstilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioSesionController">
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="595.0" styleClass="fondogris" stylesheets="@../css/hojaEstilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InicioSesionController">
    <children>
       <Label fx:id="tipoUsuarioLabel" layoutX="201.0" layoutY="104.0" text="PRUEBA">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <Button layoutX="240.0" layoutY="503.0" mnemonicParsing="false" styleClass="botonrojo" stylesheets="@../css/hojaEstilo.css" text="Iniciar sesión">
+      <Button layoutX="240.0" layoutY="503.0" mnemonicParsing="false" onAction="#pulsarIniciarSesion" styleClass="botonrojo" stylesheets="@../css/hojaEstilo.css" text="Iniciar sesión">
          <font>
             <Font size="18.0" />
          </font>

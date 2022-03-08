@@ -75,12 +75,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 .fondoBlanco{
     -fx-background-color: white;  
-    -fx-border-color: #0033ff;  
+    -fx-border-color: #c30000; 
     -fx-border-width: 1.7pt;  
     
 }
 .fondoBlanco:hover {
-     -fx-background-color: #0033ff; 
+     -fx-background-color: #c14848; 
    
     
 }
@@ -113,7 +113,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
    
 }
 
-.juego {
+.fondogris {
     -fx-background-color: #cccccc;   
     -fx-text-fill: #666666;  
     -fx-border-color: white; 
@@ -121,11 +121,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     
     
 }
-.juego:hover {
-    -fx-background-color:  #666666; 
-    
-    
-}
+
 .principio {
     -fx-background-color: #0033ff;  
     -fx-text-fill: #ffffff;   
