@@ -4,31 +4,36 @@
  */
 package modelo;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import org.w3c.dom.Document;
 
 /**
  *
- * @author jaime
+ * @author crivi
  */
-public abstract class Quiz {
-    protected String nombre;
-    protected ArrayList preguntas;
+public class Quiz {
     
-public Quiz(String nombre){
-    this.nombre = nombre;
-    preguntas = new ArrayList();
-}    
-
-
-public boolean añadirPregunta(PreguntaAbstracta pregunta){
-    return preguntas.add(pregunta);
+    private String nombre;
+    private Document [] preguntas;
     
-}
+    public Quiz(String nombre, Document [] preguntas) {
+        this.nombre = nombre;
+        this.preguntas = preguntas;
+    }
+    
+    public void setPreguntas(Document[] preguntas){
+        this.preguntas = preguntas;
+    }
+    
+    public Document[] getPreguntas() {
+        return preguntas;
+    }
+    
+     public void setNombre(String nombre) {
+         this.nombre = nombre;
+     }
 
-public boolean eliminarPregunta(PreguntaAbstracta pregunta){
-    return preguntas.remove(pregunta);
+    public  String getNombre() {
+        return nombre;
+    }
 }
-
-public abstract PreguntaAbstracta crearPregunta(String enunciado, String instrucciones, float puntuacion) throws IOException;
-}
+    

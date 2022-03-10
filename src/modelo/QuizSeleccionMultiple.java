@@ -10,7 +10,7 @@ import java.io.IOException;
  *
  * @author jaime
  */
-public class QuizSeleccionMultiple extends Quiz {
+public class QuizSeleccionMultiple extends QuizAbstracto {
     
     public QuizSeleccionMultiple(String nombre){
         super(nombre);

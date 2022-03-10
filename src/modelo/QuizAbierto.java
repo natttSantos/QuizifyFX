@@ -10,7 +10,7 @@ import java.io.IOException;
  *
  * @author jaime
  */
-public class QuizAbierto extends Quiz {
+public class QuizAbierto extends QuizAbstracto {
     
     public QuizAbierto(String nombre){
         super(nombre); 
