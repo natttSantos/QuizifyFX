@@ -4,7 +4,6 @@
  */
 package modelo;
 import org.bson.Document;
-import org.w3c.dom.Document;
 
 /**
  *

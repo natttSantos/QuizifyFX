@@ -8,7 +8,6 @@ import modelo.Conexion;
 import modelo.Pregunta;
 import org.bson.Document;
 import static java.util.Arrays.asList;
-import javax.swing.text.Document;
 
 public class ControladorPreguntas implements IControladorPreguntas {
     MongoDatabase db;
