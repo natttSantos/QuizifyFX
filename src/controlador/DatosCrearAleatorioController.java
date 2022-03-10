@@ -50,6 +50,13 @@ public class DatosCrearAleatorioController implements Initializable {
 
     @FXML
     private void checkboxClicked(ActionEvent event) {
+        if (checkbox.isSelected()) {
+            temaLabel.setDisable(false);
+            temaChoiceBox.setDisable(false);
+        } else {
+            temaLabel.setDisable(true);
+            temaChoiceBox.setDisable(true);
+        }
     }
 
     @FXML
